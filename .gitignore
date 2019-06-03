@@ -3,6 +3,6 @@
 
 #with an exception of:
 !/**/
-!*.c
-!*.h
+!/**/*.c
+!/**/*.h
 !.gitignore
