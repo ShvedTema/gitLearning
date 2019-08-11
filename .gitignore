@@ -1,9 +1,9 @@
 #ignore all files:
-    
+*    
 
 #with an exception of:
 !/**/
 !/**/*.c
 !/**/*.h
 !.gitignore
-!.pdf
+!*.pdf
