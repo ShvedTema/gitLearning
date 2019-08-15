@@ -7,3 +7,8 @@
 !/**/*.h
 !.gitignore
 !*.pdf
+!*.css
+!*.js
+!*.html
+!*.jpg
+!*.png

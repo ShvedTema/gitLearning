@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>ToDo List App</title>
+  
+  <!-- app script -->
+  <script src="todo.js"></script>
+  
+  <!-- Meta data -->
+  <meta lang="en" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- favicon -->
+  <!--<link rel="shortcut icon" href="https://material.io/static/images/simple-lp/favicons/components-72x72.png">-->
+  
+  <!-- include stylesheet -->
+  <link rel="stylesheet" href="todo.css">
+  
+  <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet"/>
+-->
+  
+  <!-- header -->
+  <div class="demo-card-square mdl-card">
+    <div class="mdl-card__title mdl-card--expand">
+      <h1 class="mdl-card__title-text">To Do List</h1>
+    </div>
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <i class="material-icons mdl-list__item-avatar">person</i>
+          <span class="mdl-layout-title" style="margin-left: 1em;">hello, username</span>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Menu</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#">Settings</a>
+          <a class="mdl-navigation__link" href="#">Log Out</a>
+          <a class="mdl-navigation__link" href="#">Profile</a>
+        </nav>
+      </div>
+    </div>  
+  </div>
+  
+    
+</head>
+<body>  
+  
+  <!-- add new task block -->
+  <div class="add_new_task center-align">
+    <form class="new_task_form" action="#">
+      <!-- text field for new task -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="newTask">
+        <label class="mdl-textfield__label" for="newTask">New Task...</label>
+      </div>
+      <!-- Colored FAB button -->
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" onclick="CreateNewTask() ">
+        <i class="material-icons" type="submit">add</i>
+      </button>
+    </form>
+  </div>
+
+
+<div class="tasksFilter">
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect tasks_filter_button active_button" onclick="ShowAllTasks()">
+    All tasks
+  </button>
+
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect tasks_filter_button" onclick="ShowOnlyTasksToDo()">
+    Tasks To Do
+  </button>
+
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect tasks_filter_button" onclick="ShowOnlyDoneTasks()">
+    Done Tasks
+  </button>
+</div>
+  
+
+  <div class="listOfTasks">
+    <ul class="demo-list-control mdl-list" id='listOfTasksToDo'></ul>
+    <ul class="demo-list-control mdl-list" id='listOfTasksDone'></ul>
+  </div>
+  
+
+
+  <!-- material design -->
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  </script>
+  <!-- Todo list script -->
+  <script src="todo.js"></script>  
+  
+<!--   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+              mdl-layout--fixed-tabs task_filtering">
+    <header class="mdl-layout__header task_filtering_header">
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect task_filtering_header">
+        <a href="#fixed-tab-1" class="mdl-layout__tab is-active task_filtering_name" onclick="ShowAllTasks()">All tasks</a>
+        <a href="#fixed-tab-2" class="mdl-layout__tab task_filtering_name" onclick="ShowOnlyTasksToDo()">To Do</a>
+        <a href="#fixed-tab-3" class="mdl-layout__tab task_filtering_name" onclick="ShowOnlyDoneTasks()">Done</a>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+        <div class="page-content">
+          <ul class="demo-list-control mdl-list" id='listOfTasksToDo'></ul>
+          <ul class="demo-list-control mdl-list" id='listOfTasksDone'></ul>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+        <div class="page-content">
+          <ul class="demo-list-control mdl-list" id='listOfTasksToDo'></ul>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+        <div class="page-content">
+          <ul class="demo-list-control mdl-list" id='listOfTasksDone'></ul>
+        </div>
+      </section>
+    </main>
+  </div> -->
+
+</body>
+  
+  
+</html>

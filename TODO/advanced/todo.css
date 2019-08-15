@@ -1,0 +1,93 @@
+/* material design */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://code.getmdl.io/1.3.0/material.indigo-amber.min.css");
+
+
+.demo-card-square.mdl-card {
+  width: 100%;
+  box-shadow: 
+    0 1px 1px 0 rgba(0,0,0,.14), 
+    0 1px 0px -1px rgba(0,0,0,.2), 
+    0 0px 3px 0 rgba(0,0,0,.12)
+}
+
+.mdl-layout__header {
+  background-color: transparent;
+}
+
+
+.mdl-card__title-text {
+  font-size: 300%;
+}
+
+
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ), url('glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.todo_header {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+}
+
+.add_new_task {
+  text-align: center;
+  margin-bottom: 2em; 
+  margin-top: 2em;
+}
+
+.new_task_form {
+  margin: auto;
+}
+
+.tasksFilter {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tasksFilter button:hover {
+  background-color: #FFBF00;
+  color: white;
+}
+
+.active_button {
+  background-color: #FFBF00;
+}
+
+.tasksList {
+  width: 50%;
+  margin: auto;
+  margin-top: 3em; 
+}
+
+#listOfTasks {
+  box-sizing: border-box;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+#listOfTasks li {
+  border: 0.5px solid #FFBF00;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.complete {
+  text-decoration: line-through;
+  color:grey;
+}
+
+.task-text {
+  margin-left: 1em;
+}
